@@ -24,9 +24,9 @@
         <td><%= vehicle.model %></td>
         <td><%= vehicle.engine_type %></td>
         <td><%= vehicle.license_plate %></td>
-        <td><%= link_to 'Show', vehicle %></td>
-        <td><%= link_to 'Edit', edit_vehicle_path(vehicle) %></td>
-        <td><%= link_to 'Destroy', vehicle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', vehicle, class:"button1" %></td>
+        <td><%= link_to 'Edit', edit_vehicle_path(vehicle), class:"button1" %></td>
+        <td><%= link_to 'Destroy', vehicle, method: :delete, data: { confirm: 'Are you sure?' } , class:"button1"%></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +34,4 @@
 
 <br>
 
-<%= link_to 'New Vehicle', new_vehicle_path %>
+<%= link_to 'New Vehicle', new_vehicle_path, class:"button" %>

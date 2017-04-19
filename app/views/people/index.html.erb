@@ -20,9 +20,9 @@
         <td><%= person.last_name %></td>
         <td><%= person.email %></td>
         <td><%= person.date_of_birth %></td>
-        <td><%= link_to 'Show', person %></td>
-        <td><%= link_to 'Edit', edit_person_path(person) %></td>
-        <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', person, class:"button1" %></td>
+        <td><%= link_to 'Edit', edit_person_path(person), class:"button1" %></td>
+        <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } , class:"button1"%></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Person', new_person_path %>
+<%= link_to 'New Person', new_person_path, class:"button" %>

@@ -1,0 +1,144 @@
+q8
+js
+var a=[2,5,6,9,10];
+var b=[12,15,16,18,20,21];
+var c=[22,25,27,30,35];
+var two=[];
+var three=[];
+var five=[];
+for(i=0;i<a.length;i++)
+{
+  if(a[i]%2===0)
+  {
+    two.push(a[i])
+  }
+}
+for(j=0;j<b.length;j++)
+{
+  if(b[j]%2===0)
+  {
+    two.push(b[j])
+  }
+}
+for(k=0;k<c.length;k++)
+{
+  if(c[k]%2===0)
+  {
+    two.push(c[k])
+  }
+}
+console.log(two);
+
+
+
+for(i=0;i<a.length;i++)
+{
+  if(a[i]%3===0)
+  {
+    three.push(a[i])
+  }
+}
+for(j=0;j<b.length;j++)
+{
+  if(b[j]%3===0)
+  {
+    three.push(b[j])
+  }
+}
+for(k=0;k<c.length;k++)
+{
+  if(c[k]%3===0)
+  {
+    three.push(c[k])
+  }
+}
+console.log(three);
+
+
+
+for(i=0;i<a.length;i++)
+{
+  if(a[i]%5===0)
+  {
+    five.push(a[i])
+  }
+}
+for(j=0;j<b.length;j++)
+{
+  if(b[j]%5===0)
+  {
+    five.push(b[j])
+  }
+}
+for(k=0;k<c.length;k++)
+{
+  if(c[k]%5===0)
+  {
+    five.push(c[k])
+  }
+}
+console.log(five);
+
+ruby
+ a=[2,5,6,9,10]
+ b=[12,15,16,18,20,21]
+ c=[22,25,27,30,35]
+two = Array.new
+a.each do |x|
+  if x%2==0
+    two.push(x)
+end
+end
+
+b.each do |x|
+  if x%2==0
+    two.push(x)
+end
+end
+
+c.each do |x|
+  if x%2==0
+    two.push(x)
+end
+end
+puts "#{two}"  
+
+three = Array.new
+a.each do |x|
+  if x%3==0
+    three.push(x)
+end
+end
+
+b.each do |x|
+  if x%3==0
+    three.push(x)
+end
+end
+
+c.each do |x|
+  if x%3==0
+    three.push(x)
+end
+end
+puts "#{three}" 
+
+five = Array.new
+a.each do |x|
+  if x%5==0
+    five.push(x)
+end
+end
+
+b.each do |x|
+  if x%5==0
+    five.push(x)
+end
+end
+
+c.each do |x|
+  if x%5==0
+    five.push(x)
+end
+end
+puts "#{five}" 

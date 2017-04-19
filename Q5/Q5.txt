@@ -1,0 +1,7 @@
+when we make call to page this steps happen
+
+1_The browser resolves the URL to an IP address.
+2_The browser sends a GET request to that IP.
+3_The server finds the correct file.
+4_The server processes the file.
+5_The file is sent to the client.

@@ -1,0 +1,44 @@
+q7
+js
+var a=[1,2,3,4];
+var b=['white','pink','red','black'];
+ 
+ merge(a,b);
+ function merge(array1, array2) {
+   var c=[] ;
+if (array1.length == array2.length) {
+   
+    for ( i = 0; i < array1.length; i++) {
+        c.push(array1[i], array2[i]);
+    }
+    
+
+
+}
+ if(array1.length < array2.length){
+   for ( i = 0; i < array1.length; i++) {
+        c.push(array1[i], array2[i]);
+    }
+    
+  
+   for(i=array1.length ; i <array2.length ; i++){
+     
+       c.push(array2[i]);
+   }
+}
+else if(array1.length > array2.length){
+ for ( i = 0; i < array2.length; i++) {
+        c.push(array1[i], array2[i]);
+    }
+     for(i=array2.length ; i <array1.length ; i++){
+     
+       c.push(array1[i]);
+   }
+}
+ return(c) ;
+}
+
+ruby
+ a=[1,2,3,4];
+ b=['white','pink','red','black'];
+a.zip(b).flatten.compact

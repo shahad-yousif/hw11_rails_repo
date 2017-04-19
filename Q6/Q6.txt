@@ -1,0 +1,1 @@
+ the purpose of application server log files that it's contain information that we can use to monitor the startup of the application server and diagnose errors.
